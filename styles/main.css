@@ -92,3 +92,6 @@ html {
     transform: scale(1.2);
     transform-origin: center;
 }
+.skin {
+    margin-left: 110%;
+}
