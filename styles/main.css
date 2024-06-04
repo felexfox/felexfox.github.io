@@ -94,4 +94,7 @@ html {
 }
 .skin {
     margin-left: 110%;
+    flex-direction: column;
+    display: block;
+    gap: 10;
 }
