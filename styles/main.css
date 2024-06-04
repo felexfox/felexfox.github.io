@@ -1,0 +1,94 @@
+html {
+    background-color: #171717;
+}
+
+.font-Manrope {
+    font-family: "Cruinn Black";
+}
+
+.font-Onest {
+    font-family: "Cruinn Black";
+}
+
+.block {
+    display: block;
+}
+
+
+.text-hello {
+    color: #fff;
+    font-weight: 400px;
+    font-size: 30px;
+}
+
+.text-about {
+    color: #A3A3A3;
+    font-weight: 300px;
+    font-size: 20px;
+}
+
+.text-time {
+    color: #A3A3A3;
+    font-size: 20px;
+}
+
+.text-timezone {
+    color: #505050;
+    font-weight: 100px;
+}
+
+.text-icon {
+    display: inline;
+    width: 22px;
+    height: 22px;
+}
+
+.container-info {
+    display: flex;
+    gap: 1rem;
+}
+
+.header {
+    height: 100px;
+}
+
+.main-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 72em;
+    display: grid;
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 4rem;
+    column-gap: 4rem;
+}
+
+.column {
+    flex-direction: column;
+    display: block;
+    gap: 10;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 256px;
+    width: 128px;
+    height: 128px;
+    box-shadow: 0 0 150px #F2BED1;
+}
+
+.button-wide {
+    margin-top: 20px;
+    width: 408px;
+    height: 96px;
+    border-radius: 20px;
+    border: 2px solid #2C2C2C;
+    background-color: #222222;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.button-wide:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}

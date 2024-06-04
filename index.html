@@ -1,17 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пидорасня</title>
-    <link rel="icon" href="/image/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
+    <title>flx site</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <script src="https://momentjs.com/downloads/moment.js"></script>
 </head>
 <body>
-    <img src="/image/oreh.png" alt = “300” height = “350”>
-    <h1 class="text">
-        Орисана гамасек
-    </h1>
-    <body background="image/untiled.png">
+    <div class="header"></div>
+    <div class="main-container">
+        <div class="column">
+            <a><img class="avatar" src="images/avatar.png" alt="main"></a>
+            <p class="font-Manrope text-hello">ку, <span style="color: #F2BED1; font-weight: 550px;" id="name">felexfox</span></p>
+
+            <p class="font-Onest text-about">Я, НЕ Java-разработчик, мне 17 лет. Занимаюсь фановой разработкой различных плагинов для игры Minecraft.</p>
+
+            <div class="container-info font-Onest text-time">
+                <img src="images/calendar.png" alt="" class="text-icon"> <span id="date"></span>
+                <br>
+                <img src="images/clock.png" alt="" class="text-icon"> <span id="time"></span><span class="text-timezone">(UTC +5:00)</span>
+            </div>
+        </div>
+
+        <div class="column" style="display: flex;">
+            
+        </div>
+    </div>
+
+    <script>
+        var date = document.getElementById('date');
+        date.textContent = moment().utcOffset(5).format('DD.MM');
+
+        var time = document.getElementById('time');
+        time.textContent = moment().utcOffset(5).format('HH:mm:ss');
+        setInterval(function() {
+            time.textContent = moment().utcOffset(5).format('HH:mm:ss');
+        }, 1000);
+
+        var list = ["felexfox", "zxc monster", "гуль тру канеки ссс(мид)+ баран бананаранга", "фелефох", "фелех"];
+        var nickname = document.getElementById('name');
+        setInterval(function() {
+            var m = 5;
+            var n = 0;
+
+            var res;
+            do {
+                res = Math.floor(Math.random() * (n - m)) + m
+            } while (nickname.textContent == list[res]);
+
+            nickname.textContent = list[res];
+        }, 2500);
+    </script>
 </body>
 </html>
