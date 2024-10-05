@@ -1,0 +1,23 @@
+.font-OpenSans{
+	font-family: "Open Sans", sans-serif;
+}
+
+.main-text{
+	font-size: 60px;
+	color: white;
+	margin: auto;
+}
+
+.centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+body{
+	background-color:#0d1117;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
