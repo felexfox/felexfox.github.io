@@ -10,13 +10,14 @@
 
 .centered{
 	position: absolute;
-	top: 50%;
+	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
 
 body{
-	background-image: "https://i.imgur.com/kQz41xh.gif";
-	background-size: auto;
+	background-color: #2d2d2d;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
